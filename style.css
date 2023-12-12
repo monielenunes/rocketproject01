@@ -1,0 +1,69 @@
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  text-align: center; /*alinha todos os elementos do body ao centro*/
+  margin: 0; /*tira a margem de todo o body e faz a imagem ficar colada no topo por default*/
+}
+
+#hero {
+  width: 592px;
+  margin: 0 auto 72px; /*alinhamento de itens em caixa. Compensa o lado que está menor, fazendo alinhar ao meio */
+  /* da para aplicar individual para todos os lados do id. Exemplo se tiver 
+  duas solicitoes da margem -  margin auto 72px; - primeiro valor aplica para o 
+  top e para o bottom, segundo valor aplica para as laterais.  Se tiver 3 valores: margin auto 72px 62px
+  primeiro valor automatico, segundo valor para as laterais e terceiro valor para baixo. 
+  Se utilizar 4 valores, ele ira contar como um relogio, da esquerda para a direita e sera aplicato 
+  top, right, bottom, left */
+
+}
+
+#hero img{
+  margin-bottom: 72px; /*margem abaixo da imagem*/
+
+}
+h1{
+  font-family: 'Inter', sans-serif;
+  font-size: 49px;
+  line-height: 56px; /*altura de linha*/
+  margin-bottom: 72px;
+}
+
+h1 span{ /*entrando dentro do span que esta no h1*/
+  font-weight: bold;
+}
+
+ 
+
+p, a { /* agrupando os seletores que tem as mesmas propriedades*/
+  font-family: 'Open Sans', sans-serif;
+}
+
+span, a{
+  color:#FF9900;
+}
+
+p, #footer{
+  color: #7D7987;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+  
+#footer a + a  { /* esta falando: pegue o A que interior a ele tem um A, 
+  e apligue uma margem a esquerda, de 28 pixels.*/
+  margin-left: 28px;
+}
+
+#line{
+  width: 568px;
+  height: 0px;
+  margin: 0 auto 8px;
+  border: 1px #ECEFF2 solid;
+} 
+
+#balls{
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+
+}
